@@ -11,16 +11,13 @@ function proceed() {
     var submitOK = true
     if (username.length < 1) {
         alert("Please enter a username");
-        submitOK = "false";
-    } 
-    
-    if (submitOK == "false") {
         return false;
-    }
+    } 
     const parent = document.getElementById("body");
     const child = document.getElementById("page");
     const para = document.createElement("h1");
-    const node = document.createTextNode("Successfully generated");
+    const node = document.createTextNode("You got rickrolled... better luck next time!");
     para.appendChild(node);
     parent.replaceChild(para,child);
+    window.open("https://youtu.be/dQw4w9WgXcQ");
 }
